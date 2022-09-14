@@ -50,7 +50,6 @@ public class StateSpaceFlywheel implements AsyncPeriodicRunnable {
     // Outputs (what we can measure): [velocity], in radians per second.
     private LinearSystem<N1, N1, N1> moiFlywheelPlant = LinearSystemId.createFlywheelSystem(DCMotor.getNEO(2), flywheelMomentOfInertia, flywheelGearing);
 
-
     private final KalmanFilter<N1, N1, N1> m_observer =
             new KalmanFilter<>(
                     Nat.N1(),

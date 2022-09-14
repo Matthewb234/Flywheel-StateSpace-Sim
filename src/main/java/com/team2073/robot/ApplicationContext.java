@@ -4,7 +4,6 @@ import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel;
 
 public class ApplicationContext {
-
     private static ApplicationContext instance;
 
     private CANSparkMax flywheelMotor;

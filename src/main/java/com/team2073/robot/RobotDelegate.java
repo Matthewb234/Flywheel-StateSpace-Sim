@@ -9,7 +9,6 @@ public class RobotDelegate extends AbstractRobotDelegate {
     private ApplicationContext appCTX = ApplicationContext.getInstance();
 
     private OperatorInterface oi = new OperatorInterface();
-//    private ExampleArm exampleArm = new ExampleArm();
     private StateSpaceFlywheel stateSpaceFlywheel = new StateSpaceFlywheel();
 
     public RobotDelegate(double period) {
